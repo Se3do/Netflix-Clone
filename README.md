@@ -9,6 +9,7 @@ Welcome to the documentation for the Netflix Clone Application, a Java-based pro
 1. [Project Overview](#project-overview)
 2. [Backend Features](#backend-features)
    - [OMDb Website Integration](#omdb-website-integration)
+   - [JSON Handling and Searching](#JSON-Handling-and-Searching)
 3. [Frontend Features](#frontend-features)
    - [Scene1: Movie Search and Display](#scene1-movie-search-and-display)
    - [Scene2: Detailed Movie Information](#scene2-detailed-movie-information)
