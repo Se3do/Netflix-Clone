@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="143.0" layoutY="102.0" prefHeight="25.0" prefWidth="22.0" />
+      <TextField layoutX="181.0" layoutY="102.0" prefHeight="25.0" prefWidth="22.0" />
+      <TextField layoutX="222.0" layoutY="102.0" prefHeight="25.0" prefWidth="22.0" />
+      <Label layoutX="212.0" layoutY="103.0" prefHeight="17.0" prefWidth="12.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="173.0" layoutY="103.0" prefHeight="17.0" prefWidth="12.0" text=":" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="98.0" prefHeight="25.0" prefWidth="103.0" text="Enter Time" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="80.0" prefHeight="21.0" prefWidth="22.0" text="Hr" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="80.0" prefHeight="21.0" prefWidth="35.0" text="Min" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="80.0" prefHeight="21.0" prefWidth="35.0" text="Sec" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
