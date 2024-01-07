@@ -67,9 +67,9 @@ Scene2 provides detailed information about a selected movie, including:
 ## Dependencies
 
 - **JavaFX:** Ensure that your development environment is configured to include the JavaFX library.
+  
 - **JSON Simple Library:** This project utilizes the JSON Simple library for handling JSON data from the OMDb API. Make sure that your development enviroment is configured to include the JSON Simple Library
 
-Ensure that your project's build configuration includes this dependency to successfully handle JSON data in the Netflix Clone Application.
 
 ## Contributions
 
@@ -80,6 +80,4 @@ Contributions to the project are welcome. If you have any suggestions, improveme
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
 Feel free to enhance this documentation with additional information as needed for your specific project.
-This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-Feel free to enhance this documentation with additional information as needed for your specific project.
