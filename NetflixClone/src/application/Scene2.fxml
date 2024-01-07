@@ -222,7 +222,7 @@
                   </HBox>
                </children>
             </VBox>
-            <Label fx:id="Title" layoutX="247.0" layoutY="17.0" prefHeight="38.0" prefWidth="176.0" text="Movie_Name" textFill="#fcf9f9" wrapText="true">
+            <Label fx:id="Title" layoutX="247.0" layoutY="17.0" prefHeight="38.0" text="Movie_Name" textFill="#fcf9f9" wrapText="true">
                <font>
                   <Font name="System Bold" size="26.0" />
                </font>
