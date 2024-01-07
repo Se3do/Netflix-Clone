@@ -20,7 +20,7 @@ Welcome to the documentation for the Netflix Clone Application, a Java-based pro
 
 ## Project Overview
 
-The Netflix Clone Application is a Java-based project that utilizes the OMDb website to fetch movie data. It offers a seamless user interface for interacting with the application, featuring frontend components built using JavaFX and backend logic for handling API requests.
+The Netflix Clone Application is a Java-based project that utilizes the OMDb website to fetch movie data. It offers a seamless user interface for interacting with the application, featuring frontend components built using JavaFX and backend logic for handling Website requests.
 
 ## Key Backend Features
 
@@ -33,8 +33,8 @@ The backend of the Netflix Clone Application integrates with the OMDb website to
 In the `Scene1_Controller` class, JSON handling and search functionality play a pivotal role in dynamically updating the movie list based on user input. Here are the key components:
 
 - **JSON Handling:**
-  - The `getjson(String link)` method handles the retrieval and parsing of JSON data from the OMDb API. It uses a `URL` object to connect to the Website and a `JSONParser` to parse the JSON response into a `JSONObject`.
-  - The `addMovie()` and `addMovie(String s)` methods utilize the `getjson` method to fetch movie details from the OMDb API based on the user's search input. The retrieved JSON response is then used to create a new `MoviePane` representing the movie.
+  - The `getjson(String link)` method handles the retrieval and parsing of JSON data from the OMDb Website. It uses a `URL` object to connect to the Website and a `JSONParser` to parse the JSON response into a `JSONObject`.
+  - The `addMovie()` and `addMovie(String s)` methods utilize the `getjson` method to fetch movie details from the OMDb Website based on the user's search input. The retrieved JSON response is then used to create a new `MoviePane` representing the movie.
 
 ## Key Frontend Features
 
@@ -69,7 +69,7 @@ Scene2 provides detailed information about a selected movie, including:
 
 - **JavaFX:** Ensure that your development environment is configured to include the JavaFX library.
   
-- **JSON Simple Library:** This project utilizes the JSON Simple library for handling JSON data from the OMDb API. Make sure that your development enviroment is configured to include the JSON Simple Library
+- **JSON Simple Library:** This project utilizes the JSON Simple library for handling JSON data from the OMDb Website. Make sure that your development enviroment is configured to include the JSON Simple Library
 
 
 ## Contributions
