@@ -56,7 +56,7 @@ Scene2 provides detailed information about a selected movie, including:
 
 - **Title and Overview:** Displays the movie title and a brief overview of the plot.
 - **Genres:** Presents the movie genres in a visually appealing manner.
-- **Additional Details:** Includes information such as rated, runtime, language, release date, and awards.
+- **Additional Details:** Includes information such as MPAA Rating, runtime, language, release date, and awards.
 - **Poster Image:** Displays the movie poster image.
 - **Navigation:** Users can easily switch back to Scene1 to explore more movies.
 
