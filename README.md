@@ -7,16 +7,17 @@ Welcome to the documentation for the Netflix Clone Application, a Java-based pro
 ### Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Backend Features](#backend-features)
+2. [Backend Features](#Key-Backend-Features)
    - [OMDb Website Integration](#omdb-website-integration)
    - [JSON Handling and Searching](#JSON-Handling-and-Searching)
-3. [Frontend Features](#frontend-features)
+3. [Frontend Features](#Key-frontend-features)
    - [Scene1: Movie Search and Display](#scene1-movie-search-and-display)
    - [Scene2: Detailed Movie Information](#scene2-detailed-movie-information)
-4. [How to Use](#how-to-use)
-5. [Dependencies](#dependencies)
-6. [Contributions](#contributions)
-7. [License](#license)
+4. [Sample Images](#Sample-Images)
+5. [How to Use](#how-to-use)
+6. [Dependencies](#dependencies)
+7. [Contributions](#contributions)
+8. [License](#license)
 
 ## Project Overview
 
@@ -58,6 +59,16 @@ Scene2 provides detailed information about a selected movie, including:
 - **Additional Details:** Includes information such as rated, runtime, language, release date, and awards.
 - **Poster Image:** Displays the movie poster image.
 - **Navigation:** Users can easily switch back to Scene1 to explore more movies.
+
+## Sample Images
+
+![Movie Display](https://raw.githubusercontent.com/Se3do/Netflix-Clone/main/NetflixClone/Preview/image%20(1).png)
+
+*1 - Showcasing the Movie Display interface.*
+
+![Movie Display](https://raw.githubusercontent.com/Se3do/Netflix-Clone/main/NetflixClone/Preview/image%20(3).png)
+
+*2 - Showcasing Detailed Movie interface.*
 
 ## How to Use
 
