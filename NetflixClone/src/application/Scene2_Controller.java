@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -64,6 +65,8 @@ public class Scene2_Controller implements Initializable {
 
     @FXML
     private ImageView Poster;
+    
+    private Label[] labels; 
  
     
     private List<MoviePane> movies;
@@ -74,12 +77,12 @@ public class Scene2_Controller implements Initializable {
 
     Scene2_Controller(MoviePane x) {
         movies = new ArrayList<>();
-        mvlist = (TilePane) x.getParent();
-
-        for (Node i : mvlist.getChildren()) {
-            MoviePane n = (MoviePane) i;
-            movies.add(n);
-        }
+//        mvlist = (TilePane) x.getParent();
+//
+//        for (Node i : mvlist.getChildren()) {
+//            MoviePane n = (MoviePane) i;
+//            movies.add(n);
+//        }
         
         this.movie = x;
     }
@@ -99,6 +102,12 @@ public class Scene2_Controller implements Initializable {
     }
 
     public void switchToScene1(ActionEvent event) throws IOException {
+    		mvlist = (TilePane) movie.getParent();
+
+    		for (Node i : mvlist.getChildren()) {
+    				MoviePane n = (MoviePane) i;
+          	movies.add(n);
+    		}
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Scene.fxml"));
         Scene1_Controller controller = new Scene1_Controller(movies);
         loader.setController(controller);
@@ -111,10 +120,48 @@ public class Scene2_Controller implements Initializable {
         stage.show();
     }
     
+    
+    public void edit() {
+    	Scanner input = new Scanner(System.in);
+    	System.out.println("What Field do you wish to edit ?");
+    	int i = 0;
+    	for(i = 0; i < labels.length; i++) {
+    		System.out.println("[" + (i+1) + "]" + " " + labels[i].getId());
+//    		System.out.println("Edit " + i.getId() + " ?\n[y]Yes [n]No");
+//    		if(op.equals("y")) {
+//    			System.out.println();
+//    			i.setText(input.next());
+//    		}
+    	}
+    	System.out.println("[" + 12 + "]" + "None");
+    	int op = 0;
+    	System.out.print("Enter field index : ");
+    	op = input.nextInt();
+    	input.nextLine();
+    	while(op != 12) {
+    		System.out.println("Enter new text");
+    		String val = input.nextLine();
+    		labels[op-1].setText(val);
+    		System.out.print("Done ;)\nEnter field index : ");
+    		op = input.nextInt();
+    		input.nextLine();
+    	}
+    	movie.setTitle(Title.getText());
+    	movie.setPlot(Overview.getText());
+    	movie.setRated(Rated.getText());
+    	movie.setLanguage(Language.getText());
+    	movie.setRating(Rating.getText());
+    	movie.setReleaseDate(Date.getText());
+    	movie.setActors(Actors.getText());
+    	movie.setDirector(Directors.getText());
+    	movie.setWriter(Writers.getText());
+    	movie.setAwards(Awards.getText());
+    }
   
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+    		
         Title.setText(movie.getTitle());
         getGenres(movie.getGenre()).forEach(label -> Genres.getChildren().add(label));
         Overview.setText(movie.getPlot());
@@ -128,7 +175,7 @@ public class Scene2_Controller implements Initializable {
         Writers.setText("  " + movie.getWriter() + "  ");
         Awards.setText("  " + movie.getAwards() + "  ");
         Poster.setImage(new Image(movie.getPosterLink()));
-        
+        labels = new Label[]{Title, Overview, Rated, Runtime, Language, Rating, Date, Actors, Directors, Writers, Awards};
     }
 
 }
