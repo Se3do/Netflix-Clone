@@ -135,14 +135,14 @@ public class Scene2_Controller implements Initializable {
     	}
     	System.out.println("[" + 12 + "]" + "None");
     	int op = 0;
-    	System.out.print("Enter field index : ");
+    	System.out.println("What do You Wish to Edit ? ");
     	op = input.nextInt();
     	input.nextLine();
     	while(op != 12) {
     		System.out.println("Enter new text");
     		String val = input.nextLine();
     		labels[op-1].setText(val);
-    		System.out.print("Done ;)\nEnter field index : ");
+    		System.out.println("Done ;)\nWhat do You Wish to Edit ? ");
     		op = input.nextInt();
     		input.nextLine();
     	}
