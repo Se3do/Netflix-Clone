@@ -8,7 +8,7 @@ Welcome to the documentation for the Netflix Clone Application, a Java-based pro
 
 1. [Project Overview](#project-overview)
 2. [Backend Features](#Key-Backend-Features)
-   - [OMDb Website Integration](#omdb-website-integration)
+   - [OMDb API Integration](#omdb-API-integration)
    - [JSON Handling and Searching](#JSON-Handling-and-Searching)
 3. [Frontend Features](#Key-frontend-features)
    - [Scene1: Movie Search and Display](#scene1-movie-search-and-display)
@@ -21,21 +21,21 @@ Welcome to the documentation for the Netflix Clone Application, a Java-based pro
 
 ## Project Overview
 
-The Netflix Clone Application is a Java-based project that utilizes the OMDb website to fetch movie data. It offers a seamless user interface for interacting with the application, featuring frontend components built using JavaFX and backend logic for handling Website requests.
+The Netflix Clone Application is a Java-based project that utilizes the OMDb API to fetch movie data. It offers a seamless user interface for interacting with the application, featuring frontend components built using JavaFX and backend logic for handling API requests.
 
 ## Key Backend Features
 
-### OMDb Website Integration
+### OMDb API Integration
 
-The backend of the Netflix Clone Application integrates with the OMDb website to fetch detailed information about movies. The application sends HTTP requests to the OMDb Website based on user input, retrieves JSON responses, and processes the data for display in the frontend.
+The backend of the Netflix Clone Application integrates with the OMDb API to fetch detailed information about movies. The application sends HTTP requests to the OMDb API based on user input, retrieves JSON responses, and processes the data for display in the frontend.
 
 ### JSON Handling and Searching
 
 In the `Scene1_Controller` class, JSON handling and search functionality play a pivotal role in dynamically updating the movie list based on user input. Here are the key components:
 
 - **JSON Handling:**
-  - The `getjson(String link)` method handles the retrieval and parsing of JSON data from the OMDb Website. It uses a `URL` object to connect to the Website and a `JSONParser` to parse the JSON response into a `JSONObject`.
-  - The `addMovie()` and `addMovie(String s)` methods utilize the `getjson` method to fetch movie details from the OMDb Website based on the user's search input. The retrieved JSON response is then used to create a new `MoviePane` representing the movie.
+  - The `getjson(String link)` method handles the retrieval and parsing of JSON data from the OMDb API. It uses a `URL` object to connect to the API and a `JSONParser` to parse the JSON response into a `JSONObject`.
+  - The `addMovie()` and `addMovie(String s)` methods utilize the `getjson` method to fetch movie details from the OMDb API based on the user's search input. The retrieved JSON response is then used to create a new `MoviePane` representing the movie.
 
 ## Key Frontend Features
 
@@ -80,7 +80,7 @@ Scene2 provides detailed information about a selected movie, including:
 
 - **JavaFX:** Ensure that your development environment is configured to include the JavaFX library.
   
-- **JSON Simple Library:** This project utilizes the JSON Simple library for handling JSON data from the OMDb Website. Make sure that your development enviroment is configured to include the JSON Simple Library
+- **JSON Simple Library:** This project utilizes the JSON Simple library for handling JSON data from the OMDb API. Make sure that your development enviroment is configured to include the JSON Simple Library
 
 
 ## Contributions
